@@ -5,17 +5,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.9.3/contr
 //inheriting from another contract named ERC20. 
 contract kryptToken is ERC20 {
     address public  admin;
-    //include name,id
-    //what is evm?
-    //ABI?
-    //ON deployment, there are two codes, evm bytecode and abi define the mthods and a variables that are Avaialble in smart contract.
-    //sopholia network
-    
-    // for metamask
-
-    //always use memory for using strings
-    //deploy on the testnet
-
+   
     constructor() ERC20("kryptToken", "KT") {
         admin = msg.sender;
         _mint(admin, 1000000 * 10**18); //1 million tokens to admin
@@ -93,6 +83,9 @@ contract KTBusinessLogic{
 
     }
 
+    function customerBalance(address customer) external view returns (uint256) {
+        return token.balanceOf(customer);
+    }
     
 
 }
