@@ -15,7 +15,7 @@ Creating a Smart Contract.
 This assignment focuses on implementing Smart-Contract helping the company raise its profits.
 
 ## Implementation
-- Smart contract written using solidity in Transact.sol file. Remix IDE used for testing.
+- Smart contract written using solidity in kryptToken.sol file. Remix IDE used for testing.
 
 
 ## Tech Stack
