@@ -91,7 +91,7 @@ contract KTBusinessLogic{
     }
 
     // Function to earn tokens for a customer
-    function earnTokens(uint256 amount) public payable{
+    function earnTokens(uint256 amount) external payable{
         // Transfer tokens from the token contract to the customer
         kryptToken kt = kryptToken(_kryptTokenAddress);
         kt.transferFrom(krypt_Address, msg.sender, amount);
@@ -150,12 +150,6 @@ contract KTBusinessLogic{
 
         return discountedPrice;
     }
-
-    
-
-
-
-
 
     
 }
